@@ -16,9 +16,14 @@ def find_words(board, dictionary):
     found_words = set()
 
     directions = [
-        (-1, -1), (-1, 0), (-1, 1),
-        (0, -1),          (0, 1),
-        (1, -1),  (1, 0),  (1, 1),
+        (-1, -1),
+        (-1, 0),
+        (-1, 1),
+        (0, -1),
+        (0, 1),
+        (1, -1),
+        (1, 0),
+        (1, 1),
     ]
 
     def dfs(x, y, word, index, visited):
@@ -57,16 +62,16 @@ def find_words(board, dictionary):
 
 if __name__ == "__main__":
     my_board = [
-        ['К', 'О', 'Т'],
-        ['Р', 'А', 'Н'],
-        ['С', 'Л', 'О'],
+        ["К", "О", "Т"],
+        ["Р", "А", "Н"],
+        ["С", "Л", "О"],
     ]
 
-    my_dictionary = ['КОТ', 'РАН', 'СОН', 'ЛОСЬ', 'НОС', 'ТОР', 'РОТ', 'КОРА']
+    my_dictionary = ["КОТ", "РАН", "СОН", "ЛОСЬ", "НОС", "ТОР", "РОТ", "КОРА"]
 
     print("\nМатрица 3x3:")
     for row in my_board:
-        print(' '.join(row))
+        print(" ".join(row))
 
     print(f"\nСловарь: {my_dictionary}")
 

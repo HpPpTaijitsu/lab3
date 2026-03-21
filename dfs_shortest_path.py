@@ -94,11 +94,11 @@ if __name__ == "__main__":
         distance, path = dfs_shortest_path(romania_map, start, goal)
 
         if distance < float("inf"):
-            print(f" DFS нашел путь")
+            print(" DFS нашел путь")
             print(f"  Расстояние: {distance} км")
             print(f"  Путь: {' -> '.join(path)}")
         else:
-            print(f" DFS не нашел путь")
+            print(" DFS не нашел путь")
 
         if start == "Arad" and goal == "Bucharest":
             print("\n  СРАВНЕНИЕ С РУЧНЫМ РАСЧЕТОМ:")
@@ -131,13 +131,10 @@ if __name__ == "__main__":
                     "поиска из лаб. работы 1"
                 )
             elif distance == 450:
-                print(
-                    "\n  ! Метод поиска в глубину нашел путь 450 км"
-                )
+                print("\n  ! Метод поиска в глубину нашел путь 450 км")
                 print("  Это не оптимальный путь, но допустимый")
             else:
                 print(
-                    f"\n  Метод поиска в глубину нашел путь "
-                    f"{distance} км"
+                    f"\n  Метод поиска в глубину нашел путь " f"{distance} км"
                 )
                 print("  Это не совпадает с ожидаемыми результатами")
