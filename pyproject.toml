@@ -10,7 +10,7 @@ authors = [
     {name = "ilya", email = "example@mail.com"}
 ]
 license = "MIT"
-requires-python = ">=3.9"
+requires-python = ">=3.13"
 dependencies = []
 
 [project.optional-dependencies]
@@ -22,7 +22,7 @@ dev = [
 
 [tool.black]
 line-length = 79
-target-version = ["py39"]
+target-version = ["py313"]
 
 [tool.flake8]
 max-line-length = 79
