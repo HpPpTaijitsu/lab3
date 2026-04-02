@@ -6,12 +6,11 @@ build-backend = "setuptools.build_meta"
 name = "lab3"
 version = "0.1.0"
 description = "Лабораторная работа №3"
-readme = "README.md"
 authors = [
     {name = "ilya", email = "example@mail.com"}
 ]
-license = {text = "MIT"}
-requires-python = ">=3.13"
+license = "MIT"
+requires-python = ">=3.9"
 dependencies = []
 
 [project.optional-dependencies]
@@ -29,3 +28,11 @@ target-version = ["py39"]
 max-line-length = 79
 extend-ignore = ["E203", "W503"]
 exclude = [".venv", "build", "dist"]
+
+[tool.setuptools]
+py-modules = [
+    "dfs_shortest_path",
+    "flood_fill",
+    "longest_path_matrix",
+    "word_search_matrix"
+]
